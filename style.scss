@@ -1,0 +1,57 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+}
+
+header {
+    width: auto;
+    height:15vh;
+    min-height: 100px;
+    background-color: rgb(117, 96, 57);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    text-align: center;
+
+    h1 {
+        font-size: 3rem;
+        margin: auto;
+        padding-top: 5vh;
+    }
+}
+
+main {
+    display: flex;
+    padding: 0 5%;
+
+    section {
+        margin: 0 auto;
+    }
+
+    .section1 {
+        width: 60%;
+    }
+    .section2 {
+        width: 25%;
+
+        h1 {
+            visibility: hidden;
+        }
+    }
+
+    div {
+        margin: 10px;
+    }
+}
+
+footer {
+    background-color: rgb(117, 96, 57);
+    width: 100%;
+    height: 5vh;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
