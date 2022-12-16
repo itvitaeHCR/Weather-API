@@ -41,6 +41,9 @@ main .section2 h1 {
 main div {
   margin: 10px;
 }
+main p {
+  line-height: 1.7rem;
+}
 
 footer {
   background-color: rgb(117, 96, 57);

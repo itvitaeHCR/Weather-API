@@ -26,6 +26,7 @@ header {
 main {
     display: flex;
     padding: 0 5%;
+    
 
     section {
         margin: 0 auto;
@@ -44,6 +45,10 @@ main {
 
     div {
         margin: 10px;
+    }
+
+    p {
+        line-height: 1.7rem;
     }
 }
 
