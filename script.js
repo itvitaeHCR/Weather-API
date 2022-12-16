@@ -12,6 +12,17 @@ function loadMiddelburg(){
         if(this.status == 200){
             let weather = JSON.parse(this.responseText);
             console.log(weather);
+
+            // WEATHER FORECAST FUNCTIONS HERE:
+            const forecast = 
+            '<div id="middelburg">' +
+            '<h2>The Weather in '+weather.name+' right now: </h2>' +
+            '<p id="temp"> The current temperature is '+weather.main.temp+' celsius</p>' +
+            '<p id="temp"> But it rather feels like '+weather.main.feels_like+' celsius</p>' +
+            '</div>'
+            ;
+
+            document.getElementById('forecast').innerHTML = forecast;
         }
         else if (this.status == 404) {
             console.log('error 404');
