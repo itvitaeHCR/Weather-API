@@ -1,6 +1,20 @@
 const myKey = config.APIkey;
 
 document.getElementById('button1').addEventListener('click', loadMiddelburg);
+document.getElementById('select-location').addEventListener('select', getLocation);
+
+function getLocation(){
+    let city = document.getElementById('select-location').value;
+    console.log(city);
+
+    switch (city) {
+        case 'Middelburg':
+            loadMiddelburg();
+            break;
+        case '0':
+            break;
+    }
+}
 
 
 // MIDDELBURG
@@ -15,12 +29,14 @@ function loadMiddelburg(){
 
             // WEATHER FORECAST FUNCTIONS HERE:
             const forecast = 
-            '<div id="middelburg">' +
-            '<h2>The Weather in '+weather.name+' right now: </h2>' +
-            '<p id="temp"> The current temperature is '+weather.main.temp+' celsius</p>' +
-            '<p id="temp"> But it rather feels like '+weather.main.feels_like+' celsius</p>' +
-            '</div>'
-            ;
+
+            `
+            <div id="city">
+            <h2>The Weather in ${weather.name} right now: </h2>
+            <p id="temp"> The current temperature is ${weather.main.temp} celsius</p>
+            <p id="temp"> But it rather feels like ${weather.main.feels_like} celsius</p>
+            </div>
+            `;
 
             document.getElementById('forecast').innerHTML = forecast;
         }
