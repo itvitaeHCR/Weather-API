@@ -18,24 +18,23 @@
         <section class="section section1">
             <h1>THE WEATHER</h1>
             <h2>here it is: </h2>
-            <h3>no really</h3>
+            <h3>no really, but pick your location first</h3>
+            <div>
+                <form action="">
+                    <select name="select-location" id="select-location" onchange="getLocation()">
+                        <!-- location options, TEMPORARILY HARDCODED -->
+
+                        <!-- <option value="" disabled selected>Select your option</option> DOES NOT WORK IN FIREFOX-->
+                        <!-- <option value="0" selected="selected">Choose...</option> ALSO NO-->
+                        <!-- <option value="0" hidden>Pick</option> SORT OF -->
+                        <option value="1">Middelburg</option>
+                        <option value="2">Vlissingen</option>
+                    </select>
+                </form>
+            </div>
             <div>
                 <button id="button1">BUTTON 1</button>
                 <div id="forecast"></div>
-            </div>
-        </section>
-        <section class="section section2">
-            <h1>-</h1>
-            <h2>This will be a side-bar</h2>
-            <h3>thank you for noticing</h3>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio cupiditate sit iure ad omnis
-                    quisquam a odio, nostrum, neque nihil fuga et, tenetur quod voluptas rem inventore ullam iste ipsa sint
-                    commodi assumenda animi voluptatibus. Facere quos doloremque mollitia tempora voluptatibus illum quo ut
-                    obcaecati earum enim rerum voluptatum ducimus, quis culpa maiores nobis incidunt aliquam sit id. Illo
-                    praesentium et enim.
-                </p>
             </div>
         </section>
     </main>
