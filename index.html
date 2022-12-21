@@ -15,26 +15,24 @@
     </header>
 
     <main>
-        <section class="section section1">
-            <h1>THE WEATHER</h1>
-            <h2>here it is: </h2>
-            <h3>no really, but pick your location first</h3>
-            <div>
-                <form action="">
-                    <select name="select-location" id="select-location" onchange="getLocation()">
-                        <!-- location options, TEMPORARILY HARDCODED -->
-
-                        <!-- <option value="" disabled selected>Select your option</option> DOES NOT WORK IN FIREFOX-->
-                        <!-- <option value="0" selected="selected">Choose...</option> ALSO NO-->
-                        <!-- <option value="0" hidden>Pick</option> SORT OF -->
-                        <option value="0">kies</option>
-                        <option value="Middelburg">Middelburg</option>
-                        <option value="Vlissingen">Vlissingen</option>
-                    </select>
-                </form>
-            </div>
-            <div>
-                <button id="button1">BUTTON 1</button>
+        <section class="section">
+            <div class="main1">
+                <h1>THE WEATHER</h1>
+                <h2>here it is: </h2>
+                <h3>no really, but pick your location first</h3>
+                <div>
+                    <form action="">
+                        <select name="select-location" id="select-location" onchange="getLocation()">
+                            <!-- location options, TEMPORARILY HARDCODED -->
+                            <option id="default-option" value="0">pick your location</option>
+                            <option value="Middelburg">Middelburg</option>
+                            <option value="Vlissingen">Vlissingen</option>
+                        </select>
+                    </form>
+                </div>
+                <div>
+                    <button id="button1">BUTTON 1</button>
+                </div>
                 <div id="forecast"></div>
             </div>
         </section>
