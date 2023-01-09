@@ -25,14 +25,15 @@
                         <select name="select-location" id="select-location" onchange="getLocation()">
                             <!-- location options, TEMPORARILY HARDCODED -->
                             <option id="default-option" value="0">pick your location</option>
+                            <option value="Utrecht">Utrecht</option>
                             <option value="Middelburg">Middelburg</option>
                             <option value="Vlissingen">Vlissingen</option>
+                            <option value="Nice">Nice</option>
+                            <option value="Jönköping">Jönköping</option>
                         </select>
                     </form>
                 </div>
-                <div>
-                    <button id="button1">BUTTON 1</button>
-                </div>
+                <div id="current"></div>
                 <div id="forecast"></div>
             </div>
         </section>
@@ -44,6 +45,7 @@
 
     <script type="text/javascript" src="config.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    
 </body>
 
 </html>
